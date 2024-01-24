@@ -1,0 +1,4 @@
+1. the function bubble sort is a sorting algorithm that takes an array of integers and its size as parameters.
+2. the function has a return type of 'void', indicating that it sorts the array in place
+3. the function declares 3 variables: 'i' and 'j' are loop countersc, 'temp' is a temporary variable for swapping and 'swapped' is a flag to track whether any swaps occured during a pass
+4. 
