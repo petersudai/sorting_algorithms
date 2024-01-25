@@ -48,12 +48,11 @@ void counting_sort(int *array, size_t size)
 		count[array[i]]--;
 	}
 
+	print_array(output, size);
+
 	for (i = 0; (size_t)i < size; i++)
 		array[i] = output[i];
-
-	print_array(count, max + 1);
 
 	free(count);
 	free(output);
 }
-
