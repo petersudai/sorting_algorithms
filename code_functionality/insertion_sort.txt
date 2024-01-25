@@ -1,0 +1,5 @@
+void insertion_sort_list(listint_t **list)
+
+1. the function sorts a doubly linked list using the Insertion Sort algorithm.
+2. the function takes a double pointer to the head of the doubly linked list ('list') as an argument.
+3. 
