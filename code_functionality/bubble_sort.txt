@@ -1,4 +1,16 @@
+void bubble_sort(int *array, size_t size)
+
 1. the function bubble sort is a sorting algorithm that takes an array of integers and its size as parameters.
 2. the function has a return type of 'void', indicating that it sorts the array in place
 3. the function declares 3 variables: 'i' and 'j' are loop countersc, 'temp' is a temporary variable for swapping and 'swapped' is a flag to track whether any swaps occured during a pass
-4. 
+4. the 'if' statement checks f the array is 'NULL' or if its size is less than 2. If either conditiion is true, the function returns early because sorting is unnecessary.
+5. the outer loop iterates over the array from beginning to the second last elemnt. It represents each pass of the Bubble Sort.
+6. inside the outer loop, 'swapped' is set to 0 at the beginning of each pass.
+7. the inner loop iterates over the unsorted portion of the array. The '- i' is used to avoid unnecessary comparisons with already sorted elements.
+8. inside the inner loop, there's a conditonal statement checking if 'array[j]' is greater than 'array[j + i]'. If true, it swaps the elements and sets 'swapped' to 1.
+9. after the inner loop, there's another check : if 'swapped' is still 0, it means no swaps occurred during the pass, indicating that the array is already sorted. In this case, the function breaks out of the outer loop, avoiding unnecessary iterations.
+
+void print_array(const int *array, size_t size);
+
+1. this function prints arrays, providing a visual representation of the sorting process
+2. it is called after each swap to print the current state of the array
